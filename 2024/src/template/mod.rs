@@ -41,17 +41,17 @@ pub fn read_file_part(folder: &str, day: Day, part: u8) -> String {
 /// The optional, second parameter (1 or 2) allows you to only run a single part of the solution.
 #[macro_export]
 macro_rules! solution {
-    ($day:expr) => {
+    ($day:expr_2021) => {
         $crate::solution!(@impl $day, [part_one, 1] [part_two, 2]);
     };
-    ($day:expr, 1) => {
+    ($day:expr_2021, 1) => {
         $crate::solution!(@impl $day, [part_one, 1]);
     };
-    ($day:expr, 2) => {
+    ($day:expr_2021, 2) => {
         $crate::solution!(@impl $day, [part_two, 2]);
     };
 
-    (@impl $day:expr, $( [$func:expr, $part:expr] )*) => {
+    (@impl $day:expr_2021, $( [$func:expr_2021, $part:expr_2021] )*) => {
         /// The current day.
         const DAY: $crate::template::Day = $crate::day!($day);
 

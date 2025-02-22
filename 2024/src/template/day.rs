@@ -137,7 +137,7 @@ impl Iterator for AllDays {
 /// Creates a [`Day`] value in a const context.
 #[macro_export]
 macro_rules! day {
-    ($day:expr) => {{
+    ($day:expr_2021) => {{
         const _ASSERT: () = assert!(
             $day != 0 && $day <= 25,
             concat!(
@@ -154,7 +154,7 @@ macro_rules! day {
 
 #[cfg(feature = "test_lib")]
 mod tests {
-    use super::{all_days, Day};
+    use super::{Day, all_days};
 
     #[test]
     fn all_days_iterator() {
