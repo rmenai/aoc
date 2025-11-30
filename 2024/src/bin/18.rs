@@ -1,10 +1,11 @@
-advent_of_code::solution!(14);
+advent_of_code::solution!(18);
 
-pub fn part_one(input: &str) -> Option<u64> {
+pub fn part_one(_input: &str) -> Option<u64> {
+    // Some(1)
     None
 }
 
-pub fn part_two(input: &str) -> Option<u64> {
+pub fn part_two(_input: &str) -> Option<u64> {
     None
 }
 

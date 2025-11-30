@@ -26,9 +26,9 @@ jobs:
             ~/.cargo/registry/cache/
             ~/.cargo/git/db/
             2024/target/
-          key: ${{ runner.os }}-cargo-${{ hashFiles('2024/**/Cargo.lock') }}
+          key: ${{ runner.os }}-cargo-${{ hashFiles('${{ secrets.AOC_YEAR }}/**/Cargo.lock') }}
           restore-keys: ${{ runner.os }}-cargo-
 
       - name: cargo test
-        working-directory: 2024
+        working-directory: ${{ secrets.AOC_YEAR }}
         run: cargo test
