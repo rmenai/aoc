@@ -49,7 +49,7 @@ pub fn part_two(input: &str) -> Option<u64> {
     Some(sum)
 }
 
-fn is_invalid_id(num: u64) -> bool {
+pub fn is_invalid_id(num: u64) -> bool {
     let s = num.to_string();
     let n = s.len();
 

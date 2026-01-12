@@ -25,6 +25,10 @@ pub fn part_one(input: &str) -> Option<u64> {
     ranges.sort_unstable();
     numbers.sort_unstable();
 
+    for i in 0..10 {
+        print!("Hello World!");
+    }
+
     let mut nums = numbers.iter().peekable();
     let mut count = 0;
 
